@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url(images/palms.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+.contact-title {
+  margin-top: 80px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 1.5s ease-in-out;
+}
+
+.contact-title h1 {
+  font-size: 36px;
+  line-height: 10px;
+}
+
+.contact-title h2 {
+  font-size: 18px;
+}
+
+select {
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+select option {
+  background-color: rgb(163, 163, 163);
+  font-size: 13px;
+  color: white;
+}
+
+::placeholder {
+  color: rgb(80, 79, 8);
+}
+
+option:not(:first-of-type) {
+  color: black;
+}
+
+form {
+  margin-top: 40px;
+  transition: all 2s ease-in-out;
+}
+
+/*
+.contact-form {
+  background-color: #1d1566be;
+  transition: all 2s ease-in-out;
+  padding-top: 0.1px;
+  border: 2px solid rgb(27, 77, 124);
+  border-radius: 15px;
+  height: 400px;
+  width: 500px;
+  margin: auto;
+}*/
+
+.form-control {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1.15px solid #252525;
+  /*border-bottom: 1px solid gray;*/
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  /*padding: 3.3px 8px;*/
+  background-color: rgb(235, 235, 235);
+  color: rgb(80, 79, 8);
+  size: 30%;
+  /*color: rgb(122, 122, 122);*/
+}
+
+#name {
+  width: 350px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+}
+
+#hotels {
+  width: 350px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+}
+
+#tours {
+  width: 325px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+}
+
+#dates {
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-right: 5px;
+}
+
+input[type="date"]::before {
+  content: attr(placeholder);
+  width: 80%;
+  color: rgb(80, 79, 8);
+}
+/* hide our custom/fake placeholder text when in focus to 
+   show the default 'mm/dd/yyyy' value and when valid to 
+   show the users' date of birth value.
+*/
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+  display: none;
+}
+
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
+input[type="date"] {
+  position: relative;
+  padding-right: 5px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  opacity: 80%;
+}
+
+#times {
+  height: 30.7px;
+  width: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-left: 5px;
+  padding-right: 2.5px;
+}
+/*
+input[type="time"]::-webkit-datetime-edit-ampm-field,
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-text {
+  color: transparent;
+}
+*/
+input[type="time"]::before {
+  content: attr(placeholder);
+  width: 80%;
+  color: rgb(80, 79, 8);
+}
+
+/* hide our custom/fake placeholder text when in focus to 
+   show the default 'mm/dd/yyyy' value and when valid to 
+   show the users' date of birth value.
+*/
+
+input[type="time"]:focus::before,
+input[type="time"]:valid::before {
+  display: none;
+}
+
+/*
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+*/
+
+/*
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+  color: red;
+}
+input[type="date"]:hover::before {
+  content: " Date Picker ";
+  color: #555;
+  padding-right: 5px;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+*/
+#adults {
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-right: 5px;
+}
+
+#kids {
+  width: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-left: 5px;
+}
+
+#reserved {
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-right: 5px;
+}
+
+#room {
+  width: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-left: 5px;
+}
+
+#details {
+  width: 330px;
+  height: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+}
+
+form .submit {
+  margin-top: 12px;
+  height: 30px;
+  width: 88px;
+  background: #e2481a;
+  border: 1.25px solid #252525;
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 1.3px;
+}
+
+form .submit:hover {
+  background-color: rgb(194, 0, 0);
+  cursor: pointer;
+}
