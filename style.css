@@ -1,3 +1,133 @@
+html {
+  zoom: 1;
+}
+
+header {
+  position: fixed;
+  height: auto;
+  max-height: 50px;
+  top: 0px;
+  width: 100%;
+  border-bottom: 0px rgb(134, 18, 37) solid;
+  transition: all 2s ease-in-out;
+}
+
+.head {
+  background-color: rgb(221, 221, 221);
+  position: inherit;
+  overflow: auto;
+  width: 100%;
+  color: #272727;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  transition: all 2s ease-in-out;
+}
+
+.head-left {
+  float: left;
+  border: 0px rgb(134, 18, 37) solid;
+}
+
+.head-right {
+  float: right;
+  border: 0px rgb(134, 18, 37) solid;
+  padding-top: 15px;
+  margin-right: 33px;
+  transition: margin-right 2s;
+}
+
+img,
+a {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#logo {
+  display: inline;
+  margin-left: 20px;
+  padding-top: 2.5px;
+  padding-bottom: 5px;
+}
+
+/* 
+a:not(img) {
+} */
+
+#phoneIcon {
+  margin-left: 95px;
+  vertical-align: 5px;
+}
+
+#phoneNumber {
+  margin-left: 3px;
+  vertical-align: 13px;
+}
+
+#whatsappIcon {
+  margin-left: 80px;
+  vertical-align: 5.5px;
+}
+
+#whatsappNumber {
+  margin-left: 3px;
+  vertical-align: 13px;
+}
+
+#emailIcon {
+  margin-left: 80px;
+  vertical-align: 5px;
+}
+
+#emailText {
+  margin-left: 3px;
+  vertical-align: 13px;
+}
+
+#facebookIcon {
+  vertical-align: 4.35px;
+}
+
+#instagramIcon {
+  margin-left: 12px;
+  vertical-align: 3.85px;
+}
+
+#loginIcon {
+  margin-left: 17px;
+  vertical-align: 4px;
+}
+
+#loginText {
+  margin-left: -2px;
+  vertical-align: 13px;
+}
+
+#signUpIcon {
+  margin-left: 15px;
+  vertical-align: 4px;
+}
+
+#signUpText {
+  margin-left: -3.5px;
+  vertical-align: 13px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,9 +139,14 @@ body {
   color: white;
 }
 
+.contact-title,
+.contact-form {
+  zoom: 1.2;
+}
+
 .contact-title {
-  margin-top: 80px;
-  color: #fff;
+  margin-top: 59px;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   transition: all 1.5s ease-in-out;
 }
@@ -19,6 +154,7 @@ body {
 .contact-title h1 {
   font-size: 36px;
   line-height: 10px;
+  padding-right: 9px;
 }
 
 .contact-title h2 {
@@ -44,10 +180,15 @@ option:not(:first-of-type) {
   color: black;
 }
 
-form {
+/* form {
   margin-top: 40px;
   transition: all 2s ease-in-out;
-}
+} */
+
+body {
+  margin-top: 40px;
+  transition: all 2s ease-in-out;
+} /*-----> This makes the entire page move down*/
 
 /*
 .contact-form {
@@ -87,6 +228,7 @@ form {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 #tours {
@@ -94,6 +236,7 @@ form {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 #dates {
@@ -102,6 +245,7 @@ form {
   padding-bottom: 5px;
   padding-left: 8px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 input[type="date"]::before {
@@ -149,6 +293,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: 8px;
   margin-left: 5px;
   padding-right: 2.5px;
+  cursor: pointer;
 }
 /*
 input[type="time"]::-webkit-datetime-edit-ampm-field,
@@ -251,4 +396,12 @@ form .submit {
 form .submit:hover {
   background-color: rgb(194, 0, 0);
   cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  text-align: left;
+  margin-left: 5px;
+  bottom: 10px;
+  display: none;
 }
