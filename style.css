@@ -389,8 +389,9 @@ form .submit {
   background: #e2481a;
   border: 1.25px solid #252525;
   color: #fff;
-  font-size: 17px;
-  letter-spacing: 1.3px;
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
 }
 
 form .submit:hover {
